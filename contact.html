@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Where Be Be</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#blog" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="work-with-me.html" class="nav-link">Work With Me</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title animate-fade-in">Let's Connect</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Ready to collaborate? I'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section animate-slide-up">
+                    <h2>Send Me a Message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Brand</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type">
+                                <option value="">Select a project type</option>
+                                <option value="brand-collaboration">Brand Collaboration</option>
+                                <option value="content-creation">Content Creation</option>
+                                <option value="strategy-consultation">Strategy Consultation</option>
+                                <option value="event-coverage">Event Coverage</option>
+                                <option value="ugc-content">UGC Content</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-500">Under $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-plus">$5,000+</option>
+                                <option value="discuss">Let's Discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-2-weeks">1-2 weeks</option>
+                                <option value="3-4-weeks">3-4 weeks</option>
+                                <option value="1-2-months">1-2 months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, and how we can work together..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section animate-slide-up-delay">
+                    <div class="contact-info-card">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Business Email</h4>
+                                <a href="mailto:bpeete11@gmail.com">bpeete11@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Fort Worth, Texas<br>Serving DFW Metroplex</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Response Time</h4>
+                                <p>Within 24-48 hours<br>Monday - Friday</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-connect-card">
+                        <h3>Follow My Journey</h3>
+                        <p>Stay updated with my latest content and collaborations</p>
+                        <div class="social-links-grid">
+                            <a href="https://www.instagram.com/wherebebe/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <div>
+                                    <strong>Instagram</strong>
+                                    <span>@wherebebe</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.tiktok.com/@wherebebe" target="_blank" class="social-link tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <div>
+                                    <strong>TikTok</strong>
+                                    <span>@wherebebe</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.facebook.com/wherebebedfw/?ref=pro_upsell_xav_ig_profile_page_web#" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                                <div>
+                                    <strong>Facebook</strong>
+                                    <span>Where Be Be DFW</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.youtube.com/@wherebebe?si=QN15BxwJPPxv-a_M" target="_blank" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <div>
+                                    <strong>YouTube</strong>
+                                    <span>Where Be Be</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.threads.com/@wherebebe?xmt=AQF0VDjo_8ZTSWRO7atCLsKh_QtGSkl3P1RptTHv1bR4MPU" target="_blank" class="social-link threads">
+                                <i class="fab fa-threads"></i>
+                                <div>
+                                    <strong>Threads</strong>
+                                    <span>@wherebebe</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item animate-slide-up">
+                    <h3>What's your typical response time?</h3>
+                    <p>I respond to all business inquiries within 24-48 hours during business days (Monday-Friday). For urgent requests, please mention it in your message.</p>
+                </div>
+                
+                <div class="faq-item animate-slide-up-delay">
+                    <h3>Do you work with small businesses?</h3>
+                    <p>Absolutely! I love supporting small businesses and local brands. I offer flexible packages and can work within various budget ranges.</p>
+                </div>
+                
+                <div class="faq-item animate-slide-up-delay-2">
+                    <h3>What's included in your content packages?</h3>
+                    <p>Each package includes professional content creation, editing, authentic storytelling, and revisions. Specific deliverables vary by package - check out my Work With Me page for details.</p>
+                </div>
+                
+                <div class="faq-item animate-slide-up">
+                    <h3>Do you travel for collaborations?</h3>
+                    <p>Yes! I'm based in Fort Worth but available for travel within Texas and beyond for the right partnerships. Travel expenses would be discussed separately.</p>
+                </div>
+                
+                <div class="faq-item animate-slide-up-delay">
+                    <h3>Can you create content for multiple platforms?</h3>
+                    <p>Definitely! I'm active on Instagram, TikTok, Facebook, YouTube, and Threads. I can create platform-specific content or adapt content across multiple platforms.</p>
+                </div>
+                
+                <div class="faq-item animate-slide-up-delay-2">
+                    <h3>What makes your content authentic?</h3>
+                    <p>I only partner with brands I genuinely love and use. My audience trusts my recommendations because I'm honest about my experiences and only promote products I believe in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="footer-logo">
+                    <p>Your cultural plug for Fort Worth & beyond.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="work-with-me.html">Work With Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/wherebebe/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@wherebebe" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/wherebebedfw/?ref=pro_upsell_xav_ig_profile_page_web#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@wherebebe?si=QN15BxwJPPxv-a_M" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.threads.com/@wherebebe?xmt=AQF0VDjo_8ZTSWRO7atCLsKh_QtGSkl3P1RptTHv1bR4MPU" target="_blank"><i class="fab fa-threads"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Business Inquiries:</p>
+                    <a href="mailto:bpeete11@gmail.com">bpeete11@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Where Be Be. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.innerHTML = '<span class="loading"></span> Preparing email...';
+            submitBtn.disabled = true;
+            
+            // Construct email content
+            let emailSubject = 'Business Inquiry from ' + (data.name || 'Website Visitor');
+            if (data.company) {
+                emailSubject += ' - ' + data.company;
+            }
+            
+            let emailBody = 'Hello,\n\n';
+            emailBody += 'I am reaching out regarding a potential collaboration.\n\n';
+            emailBody += 'Contact Information:\n';
+            emailBody += '• Name: ' + (data.name || 'Not provided') + '\n';
+            emailBody += '• Email: ' + (data.email || 'Not provided') + '\n';
+            if (data.company) {
+                emailBody += '• Company/Brand: ' + data.company + '\n';
+            }
+            emailBody += '\n';
+            
+            if (data['project-type']) {
+                emailBody += 'Project Type: ' + data['project-type'].replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase()) + '\n';
+            }
+            if (data.budget) {
+                emailBody += 'Budget Range: ' + data.budget.replace('-', ' - ').replace('plus', '+').replace(/\b\w/g, l => l.toUpperCase()) + '\n';
+            }
+            if (data.timeline) {
+                emailBody += 'Timeline: ' + data.timeline.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase()) + '\n';
+            }
+            emailBody += '\n';
+            
+            if (data.message) {
+                emailBody += 'Message:\n' + data.message + '\n\n';
+            }
+            
+            emailBody += 'Best regards,\n' + (data.name || 'Website Visitor');
+            
+            // Create Gmail compose URL
+            const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=bpeete11@gmail.com' +
+                '&su=' + encodeURIComponent(emailSubject) +
+                '&body=' + encodeURIComponent(emailBody);
+            
+            // Open Gmail in new tab
+            setTimeout(() => {
+                window.open(gmailUrl, '_blank');
+                
+                // Reset form and button
+                this.reset();
+                submitBtn.textContent = 'Redirected to Gmail!';
+                submitBtn.style.background = '#28a745';
+                
+                // Show success message
+                alert('You\'ve been redirected to Gmail with your message pre-filled. Please review and send the email to complete your inquiry.');
+                
+                // Reset button
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            }, 1000);
+        });
+        
+        function downloadMediaKit() {
+            alert('Media kit download would be triggered here. Please contact bpeete11@gmail.com for the media kit.');
+        }
+    </script>
+</body>
+</html>

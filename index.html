@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Be Be - Content Creator & Cultural Plug</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/main-logo.png" alt="Where Be Be Logo" class="logo">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="work-with-me.html" class="nav-link">Work With Me</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">Where Be Be</h1>
+                <p class="hero-subtitle animate-fade-in-delay">Your Cultural Plug for Fort Worth & Beyond</p>
+                <p class="hero-description animate-fade-in-delay-2">Discover the best in food, nightlife, travel, and local experiences through authentic, relatable content.</p>
+                <div class="hero-buttons animate-fade-in-delay-3">
+                    <a href="work-with-me.html" class="btn btn-primary">Work With Me</a>
+                    <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="#about">
+        <div class="container">
+            <div class="about-content-grid">
+                <div class="about-text-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-text">Hey, I'm Be — the content creator and cultural plug behind Where Be Be.</p>
+                    <a href="about.html" class="btn btn-outline">More About Me</a>
+                </div>
+                <div class="about-image-content">
+                    <img src="images/about.jpg" alt="Be - Content Creator" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed">
+        <div class="container">
+            <h2 class="section-title">Latest from Instagram</h2>
+            <div class="instagram-container" id="instagram-feed">
+                <!-- Instagram posts will be loaded here -->
+                <div class="instagram-placeholder">
+                    <i class="fab fa-instagram"></i>
+                    <p>Follow @wherebebe for the latest content</p>
+                    <a href="https://www.instagram.com/wherebebe/" target="_blank" class="btn btn-primary">Follow on Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="latest-blog">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-grid" id="latest-posts">
+                <!-- Blog posts will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay in the Loop</h2>
+                <p>Get the latest blog posts, event updates, and insider content delivered to your inbox.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="footer-logo">
+                    <p>Your cultural plug for Fort Worth & beyond.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="work-with-me.html">Work With Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/wherebebe/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@wherebebe" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/wherebebedfw/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@wherebebe" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.threads.com/@wherebebe" target="_blank"><i class="fab fa-threads"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Business Inquiries:</p>
+                    <a href="mailto:bpeete11@gmail.com">bpeete11@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Where Be Be. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

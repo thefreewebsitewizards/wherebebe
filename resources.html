@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Where Be Be</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resources.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="logo">
+                </a>
+            </div>
+           <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#blog" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="work-with-me.html" class="nav-link">Work With Me</a>
+                <a href="resources.html" class="nav-link active">Resources</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resources Hero -->
+    <section class="resources-hero">
+        <div class="container">
+            <h1 class="page-title animate-fade-in">Creator Resources</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Free tools, templates, and guides to help you level up your content game</p>
+        </div>
+    </section>
+
+    <!-- Resources Content -->
+    <section class="resources-content">
+        <div class="container">
+            <!-- Content Creation Resources -->
+            <div class="resource-category animate-slide-up">
+                <h2 class="category-title">
+                    <i class="fas fa-camera"></i>
+                    Content Creation Guides
+                </h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Ultimate Content Planning Guide</h3>
+                            <p>A comprehensive 20-page guide covering content strategy, planning, and execution for creators of all levels.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">PDF Guide</span>
+                                <span class="resource-pages">20 pages</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('content-planning-guide')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Reel Creation Checklist</h3>
+                            <p>Step-by-step checklist to create engaging Instagram Reels that convert viewers into followers.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">PDF Checklist</span>
+                                <span class="resource-pages">5 pages</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('reel-checklist')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Photography Tips for Creators</h3>
+                            <p>Master the art of content photography with lighting tips, composition rules, and editing basics.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">PDF Guide</span>
+                                <span class="resource-pages">15 pages</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('photography-tips')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Collaboration Resources -->
+            <div class="resource-category animate-slide-up-delay">
+                <h2 class="category-title">
+                    <i class="fas fa-handshake"></i>
+                    Brand Collaboration Tools
+                </h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Pitch Email Templates</h3>
+                            <p>5 proven email templates for reaching out to brands, including follow-up sequences and negotiation tips.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Email Templates</span>
+                                <span class="resource-pages">8 pages</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('pitch-templates')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Brand Collaboration Contract Template</h3>
+                            <p>Protect yourself with this comprehensive contract template covering deliverables, timelines, and payment terms.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Contract Template</span>
+                                <span class="resource-pages">6 pages</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('contract-template')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Rate Calculator Spreadsheet</h3>
+                            <p>Calculate your worth with this comprehensive spreadsheet that factors in engagement, reach, and deliverables.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Excel Spreadsheet</span>
+                                <span class="resource-pages">Interactive</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('rate-calculator')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hashtag Resources -->
+            <div class="resource-category animate-slide-up-delay-2">
+                <h2 class="category-title">
+                    <i class="fas fa-hashtag"></i>
+                    Hashtag Libraries
+                </h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Food & Restaurant Hashtags</h3>
+                            <p>200+ targeted hashtags for food content, restaurant reviews, and culinary experiences.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Hashtag List</span>
+                                <span class="resource-pages">200+ hashtags</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('food-hashtags')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>DFW Local Hashtags</h3>
+                            <p>Comprehensive list of Dallas-Fort Worth area hashtags to boost your local reach and engagement.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Hashtag List</span>
+                                <span class="resource-pages">150+ hashtags</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('dfw-hashtags')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Lifestyle & Nightlife Hashtags</h3>
+                            <p>Perfect hashtags for lifestyle content, nightlife adventures, and weekend vibes.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Hashtag List</span>
+                                <span class="resource-pages">180+ hashtags</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('lifestyle-hashtags')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Directory -->
+            <div class="resource-category animate-slide-up">
+                <h2 class="category-title">
+                    <i class="fas fa-store"></i>
+                    Black-Owned Business Directory
+                </h2>
+                <div class="resources-grid">
+                    <div class="resource-card featured">
+                        <div class="resource-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Fort Worth Black-Owned Business Guide</h3>
+                            <p>Comprehensive directory of Black-owned restaurants, shops, services, and experiences in Fort Worth.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Business Directory</span>
+                                <span class="resource-pages">50+ businesses</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('black-owned-directory')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>DFW Black-Owned Business Map</h3>
+                            <p>Interactive map and list of Black-owned businesses across the entire Dallas-Fort Worth metroplex.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Business Directory</span>
+                                <span class="resource-pages">100+ businesses</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" onclick="downloadResource('dfw-black-owned-map')">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creator Tools -->
+            <div class="resource-category animate-slide-up-delay">
+                <h2 class="category-title">
+                    <i class="fas fa-tools"></i>
+                    Creator Tools & Apps
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-info">
+                            <h3>Canva Pro</h3>
+                            <p>Design tool for creating stunning graphics, stories, and posts</p>
+                            <div class="tool-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Essential</span>
+                            </div>
+                        </div>
+                        <a href="https://canva.com" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-info">
+                            <h3>Later</h3>
+                            <p>Social media scheduling and analytics platform</p>
+                            <div class="tool-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Must-Have</span>
+                            </div>
+                        </div>
+                        <a href="https://later.com" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-info">
+                            <h3>VSCO</h3>
+                            <p>Photo editing app for consistent, professional-looking content</p>
+                            <div class="tool-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">Recommended</span>
+                            </div>
+                        </div>
+                        <a href="https://vsco.co" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-info">
+                            <h3>CapCut</h3>
+                            <p>Free video editing app perfect for TikTok and Instagram Reels</p>
+                            <div class="tool-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Free & Great</span>
+                            </div>
+                        </div>
+                        <a href="https://capcut.com" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-info">
+                            <h3>Lightroom Mobile</h3>
+                            <p>Professional photo editing with presets and advanced controls</p>
+                            <div class="tool-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">Pro Level</span>
+                            </div>
+                        </div>
+                        <a href="https://lightroom.adobe.com" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-info">
+                            <h3>Notion</h3>
+                            <p>All-in-one workspace for content planning and organization</p>
+                            <div class="tool-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Game Changer</span>
+                            </div>
+                        </div>
+                        <a href="https://notion.so" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="footer-logo">
+                    <p>Your cultural plug for Fort Worth & beyond.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="work-with-me.html">Work With Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/wherebebe/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@wherebebe" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/wherebebedfw/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@wherebebe" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.threads.com/@wherebebe" target="_blank"><i class="fab fa-threads"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Business Inquiries:</p>
+                    <a href="mailto:bpeete11@gmail.com">bpeete11@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Where Be Be. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Resources page functionality
+        function downloadResource(resourceId) {
+            // Show download animation
+            const button = event.target.closest('.download-btn');
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Downloading...';
+            button.disabled = true;
+            
+            // Trigger actual download
+            setTimeout(() => {
+                // Create download link
+                const link = document.createElement('a');
+                link.href = `resources/${resourceId}.pdf`;
+                link.download = `${resourceId}.pdf`;
+                link.style.display = 'none';
+                
+                // Add to DOM, click, and remove
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Update button state
+                button.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
+                button.style.background = '#28a745';
+                
+                // Track download
+                trackDownload(resourceId);
+                
+                // Reset button
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.style.background = '';
+                    button.disabled = false;
+                }, 3000);
+            }, 1000);
+        }
+        
+        // Newsletter form handling
+        document.getElementById('resources-newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.innerHTML = '<span class="loading"></span> Subscribing...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = 'Subscribed!';
+                submitBtn.style.background = '#28a745';
+                
+                this.reset();
+                
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            }, 2000);
+        });
+        
+        // Track download analytics (in a real implementation)
+        function trackDownload(resourceId) {
+            // Analytics tracking would go here
+            console.log(`Resource downloaded: ${resourceId}`);
+        }
+    </script>
+</body>
+</html>

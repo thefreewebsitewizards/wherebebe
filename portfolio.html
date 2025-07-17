@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Where Be Be</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#blog" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="work-with-me.html" class="nav-link">Work With Me</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="page-title animate-fade-in">My Portfolio</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Authentic content that drives results for brands I believe in</p>
+        </div>
+    </section>
+
+    <!-- Brand Collaborations -->
+    <section class="brand-collaborations">
+        <div class="container">
+            <h2 class="section-title">Brand Contents</h2>
+            <div class="brand-content-showcase">
+                <div class="phone-carousel-container">
+                    <div class="phone-mockup animate-slide-up">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="carousel-wrapper">
+                                    <div class="carousel-slides" id="carousel-slides">
+                                        <div class="carousel-slide active" data-reel="https://www.instagram.com/reel/DLoB3sfuROb/">
+                                            <iframe src="https://www.instagram.com/reel/DLoB3sfuROb/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                                        </div>
+                                        <div class="carousel-slide" data-reel="https://www.instagram.com/reel/DLgJIP-OhHb/">
+                                            <iframe src="https://www.instagram.com/reel/DLgJIP-OhHb/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                                        </div>
+                                        <div class="carousel-slide" data-reel="https://www.instagram.com/reel/DLaXvgaOu2g/">
+                                            <iframe src="https://www.instagram.com/reel/DLaXvgaOu2g/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-btn prev-btn" id="prev-btn">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <button class="carousel-btn next-btn" id="next-btn">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-info">
+                    <div class="content-details">
+                        <h3>Authentic Brand Storytelling</h3>
+                        <p>These Instagram reels showcase my approach to brand content creation - authentic, engaging, and results-driven. Each piece of content is crafted to resonate with my audience while highlighting the unique value proposition of each brand.</p>
+                        
+                        <div class="content-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-eye"></i>
+                                <div>
+                                    <h4>High Engagement</h4>
+                                    <p>Average 15K+ views per reel with strong audience interaction</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <h4>Authentic Voice</h4>
+                                    <p>Genuine reviews and experiences that build trust with followers</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-target"></i>
+                                <div>
+                                    <h4>Strategic Content</h4>
+                                    <p>Each post aligns with brand goals while maintaining my unique style</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-stats">
+                            <div class="stat">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Total Reel Views</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8.5%</span>
+                                <span class="stat-label">Avg Engagement Rate</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Brand Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section">
+        <div class="container">
+            <h2 class="section-title">Audience Insights</h2>
+            <div class="analytics-grid">
+                <div class="analytics-card total-audience animate-slide-up">
+                    <h3>Total Audience</h3>
+                    <div class="platform-stats">
+                        <div class="platform-stat">
+                            <i class="fab fa-instagram"></i>
+                            <span class="platform-name">Instagram</span>
+                            <span class="platform-count">23,200+</span>
+                        </div>
+                        <div class="platform-stat">
+                            <i class="fab fa-tiktok"></i>
+                            <span class="platform-name">TikTok</span>
+                            <span class="platform-count">17,000+</span>
+                        </div>
+                        <div class="platform-stat">
+                            <i class="fab fa-facebook"></i>
+                            <span class="platform-name">Facebook</span>
+                            <span class="platform-count">16,000+</span>
+                        </div>
+                        <div class="platform-stat">
+                            <i class="fab fa-youtube"></i>
+                            <span class="platform-name">YouTube</span>
+                            <span class="platform-count">384+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytics-card demographics animate-slide-up-delay">
+                    <h3>Demographics</h3>
+                    <div class="demo-chart">
+                        <div class="gender-breakdown">
+                            <h4>Gender Distribution</h4>
+                            <div class="pie-chart-container">
+                                <div class="pie-chart" id="gender-pie">
+                                    <div class="pie-slice women" data-percentage="80"></div>
+                                    <div class="pie-slice men" data-percentage="20"></div>
+                                </div>
+                                <div class="pie-legend">
+                                    <div class="legend-item">
+                                        <span class="legend-color women-color"></span>
+                                        <span>Women 80%</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color men-color"></span>
+                                        <span>Men 20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="age-breakdown">
+                            <h4>Age Groups</h4>
+                            <div class="bar-chart-container">
+                                <div class="age-bars">
+                                    <div class="age-bar">
+                                        <span class="age-label">18-24</span>
+                                        <div class="bar-wrapper">
+                                            <div class="bar" data-percentage="24.5"></div>
+                                        </div>
+                                        <span class="percentage">24.5%</span>
+                                    </div>
+                                    <div class="age-bar">
+                                        <span class="age-label">25-34</span>
+                                        <div class="bar-wrapper">
+                                            <div class="bar" data-percentage="30"></div>
+                                        </div>
+                                        <span class="percentage">30%</span>
+                                    </div>
+                                    <div class="age-bar">
+                                        <span class="age-label">35-44</span>
+                                        <div class="bar-wrapper">
+                                            <div class="bar" data-percentage="28.9"></div>
+                                        </div>
+                                        <span class="percentage">28.9%</span>
+                                    </div>
+                                    <div class="age-bar">
+                                        <span class="age-label">45+</span>
+                                        <div class="bar-wrapper">
+                                            <div class="bar" data-percentage="16.6"></div>
+                                        </div>
+                                        <span class="percentage">16.6%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytics-card locations animate-slide-up-delay-2">
+                    <h3>Top Locations</h3>
+                    <div class="location-chart-container">
+                        <div class="donut-chart" id="location-donut">
+                            <div class="donut-slice fort-worth" data-percentage="12.7"></div>
+                            <div class="donut-slice dallas" data-percentage="10.2"></div>
+                            <div class="donut-slice arlington" data-percentage="4.2"></div>
+                            <div class="donut-slice houston" data-percentage="2.3"></div>
+                            <div class="donut-slice other" data-percentage="70.6"></div>
+                            <div class="donut-center">
+                                <span class="center-text">Audience</span>
+                                <span class="center-subtext">Distribution</span>
+                            </div>
+                        </div>
+                        <div class="location-legend">
+                            <div class="legend-item">
+                                <span class="legend-color fort-worth-color"></span>
+                                <span class="legend-text">Fort Worth 12.7%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color dallas-color"></span>
+                                <span class="legend-text">Dallas 10.2%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color arlington-color"></span>
+                                <span class="legend-text">Arlington 4.2%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color houston-color"></span>
+                                <span class="legend-text">Houston 2.3%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color other-color"></span>
+                                <span class="legend-text">Other Cities 70.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytics-card engagement animate-slide-up-delay-3">
+                    <h3>Engagement & Reach</h3>
+                    <div class="engagement-container">
+                        <div class="line-chart-container">
+                            <div class="line-chart" id="engagement-line">
+                                <div class="chart-grid">
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                </div>
+                                <svg class="line-svg" viewBox="0 0 300 150">
+                                    <polyline class="engagement-line" points="0,120 50,100 100,80 150,60 200,45 250,30 300,20" fill="none" stroke="#DBA510" stroke-width="3"/>
+                                    <polyline class="reach-line" points="0,130 50,115 100,95 150,85 200,70 250,55 300,40" fill="none" stroke="#E82125" stroke-width="3"/>
+                                    <circle class="data-point" cx="0" cy="120" r="4" fill="#DBA510"/>
+                                    <circle class="data-point" cx="50" cy="100" r="4" fill="#DBA510"/>
+                                    <circle class="data-point" cx="100" cy="80" r="4" fill="#DBA510"/>
+                                    <circle class="data-point" cx="150" cy="60" r="4" fill="#DBA510"/>
+                                    <circle class="data-point" cx="200" cy="45" r="4" fill="#DBA510"/>
+                                    <circle class="data-point" cx="250" cy="30" r="4" fill="#DBA510"/>
+                                    <circle class="data-point" cx="300" cy="20" r="4" fill="#DBA510"/>
+                                    <circle class="data-point" cx="0" cy="130" r="4" fill="#E82125"/>
+                                    <circle class="data-point" cx="50" cy="115" r="4" fill="#E82125"/>
+                                    <circle class="data-point" cx="100" cy="95" r="4" fill="#E82125"/>
+                                    <circle class="data-point" cx="150" cy="85" r="4" fill="#E82125"/>
+                                    <circle class="data-point" cx="200" cy="70" r="4" fill="#E82125"/>
+                                    <circle class="data-point" cx="250" cy="55" r="4" fill="#E82125"/>
+                                    <circle class="data-point" cx="300" cy="40" r="4" fill="#E82125"/>
+                                </svg>
+                                <div class="chart-labels">
+                                    <span>Jan</span>
+                                    <span>Feb</span>
+                                    <span>Mar</span>
+                                    <span>Apr</span>
+                                    <span>May</span>
+                                    <span>Jun</span>
+                                    <span>Jul</span>
+                                </div>
+                            </div>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background: #DBA510;"></span>
+                                    <span>Engagement Rate</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background: #E82125;"></span>
+                                    <span>Reach Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="engagement-stats">
+                            <div class="engagement-stat">
+                                <span class="stat-number">129K+</span>
+                                <span class="stat-label">Monthly Views</span>
+                            </div>
+                            <div class="engagement-stat">
+                                <span class="stat-number">73.5K</span>
+                                <span class="stat-label">Engagements</span>
+                            </div>
+                            <div class="engagement-stat">
+                                <span class="stat-number">48.5K</span>
+                                <span class="stat-label">Accounts Reached</span>
+                            </div>
+                        </div>
+                        <div class="best-time">
+                            <strong>Peak Activity:</strong> Saturdays, 4-5 PM<br>
+                            <strong>Top Content:</strong> Instagram Reels
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Marquee -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Brands Say</h2>
+            <div class="testimonials-marquee">
+                <div class="marquee-content">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Working with Be was effortless — she delivered a well-rounded, authentic campaign and made the collaboration feel seamless."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Raevon</strong>
+                            <span>Disney Collaborator</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Be's content always highlights our products beautifully, especially for makeup beginners. Her creativity and energy shine through every post."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>LYS Beauty Team</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Amazing energy and an amazing authentic piece of content!"
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Munk Pack</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Wonderful, authentic video! THANK YOU!!"
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Miss Doctor Lady</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Brittany did a great job of showing the movement of this dress and making it look comfortable and beautiful."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Shop LC</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "We love working with Be! Her content shows real personality and makes our products feel approachable — especially for beauty newbies."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>LYS Beauty Team</strong>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate content for continuous scroll -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Working with Be was effortless — she delivered a well-rounded, authentic campaign and made the collaboration feel seamless."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Raevon</strong>
+                            <span>Disney Collaborator</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Be's content always highlights our products beautifully, especially for makeup beginners. Her creativity and energy shine through every post."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>LYS Beauty Team</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Amazing energy and an amazing authentic piece of content!"
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Munk Pack</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Wonderful, authentic video! THANK YOU!!"
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Miss Doctor Lady</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Brittany did a great job of showing the movement of this dress and making it look comfortable and beautiful."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Shop LC</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "We love working with Be! Her content shows real personality and makes our products feel approachable — especially for beauty newbies."
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>LYS Beauty Team</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Something Amazing?</h2>
+                <p>Let's collaborate and create authentic content that resonates with your target audience.</p>
+                <div class="cta-buttons">
+                    <a href="work-with-me.html" class="btn btn-primary">Work With Me</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="footer-logo">
+                    <p>Your cultural plug for Fort Worth & beyond.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="work-with-me.html">Work With Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/wherebebe/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@wherebebe" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/wherebebedfw/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@wherebebe" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.threads.com/@wherebebe" target="_blank"><i class="fab fa-threads"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Business Inquiries:</p>
+                    <a href="mailto:bpeete11@gmail.com">bpeete11@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Where Be Be. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
