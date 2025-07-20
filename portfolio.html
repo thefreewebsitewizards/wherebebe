@@ -6,7 +6,7 @@
     <title>Portfolio - Where Be Be</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -14,9 +14,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">
-                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="logo">
-                </a>
+                <h1 class="logo-text">Where Be Be</h1>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
@@ -113,15 +111,15 @@
                         
                         <div class="content-stats">
                             <div class="stat">
-                                <span class="stat-number">50K+</span>
+                                <span class="stat-number total-reel-views">50K+</span>
                                 <span class="stat-label">Total Reel Views</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">8.5%</span>
+                                <span class="stat-number engagement-rate">8.5%</span>
                                 <span class="stat-label">Avg Engagement Rate</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">95%</span>
+                                <span class="stat-number brand-satisfaction">95%</span>
                                 <span class="stat-label">Brand Satisfaction</span>
                             </div>
                         </div>
@@ -142,22 +140,22 @@
                         <div class="platform-stat">
                             <i class="fab fa-instagram"></i>
                             <span class="platform-name">Instagram</span>
-                            <span class="platform-count">23,200+</span>
+                            <span class="platform-count instagram-stat">23,200+</span>
                         </div>
                         <div class="platform-stat">
                             <i class="fab fa-tiktok"></i>
                             <span class="platform-name">TikTok</span>
-                            <span class="platform-count">17,000+</span>
+                            <span class="platform-count tiktok-stat">17,000+</span>
                         </div>
                         <div class="platform-stat">
                             <i class="fab fa-facebook"></i>
                             <span class="platform-name">Facebook</span>
-                            <span class="platform-count">16,000+</span>
+                            <span class="platform-count facebook-stat">16,000+</span>
                         </div>
                         <div class="platform-stat">
                             <i class="fab fa-youtube"></i>
                             <span class="platform-name">YouTube</span>
-                            <span class="platform-count">384+</span>
+                            <span class="platform-count youtube-stat">384+</span>
                         </div>
                     </div>
                 </div>
@@ -313,21 +311,21 @@
                         </div>
                         <div class="engagement-stats">
                             <div class="engagement-stat">
-                                <span class="stat-number">129K+</span>
+                                <span class="stat-number monthly-views">129K+</span>
                                 <span class="stat-label">Monthly Views</span>
                             </div>
                             <div class="engagement-stat">
-                                <span class="stat-number">73.5K</span>
+                                <span class="stat-number total-engagements">73.5K</span>
                                 <span class="stat-label">Engagements</span>
                             </div>
                             <div class="engagement-stat">
-                                <span class="stat-number">48.5K</span>
+                                <span class="stat-number accounts-reached">48.5K</span>
                                 <span class="stat-label">Accounts Reached</span>
                             </div>
                         </div>
                         <div class="best-time">
-                            <strong>Peak Activity:</strong> Saturdays, 4-5 PM<br>
-                            <strong>Top Content:</strong> Instagram Reels
+                            <strong>Peak Activity:</strong> <span class="peak-activity">Saturdays, 4-5 PM</span><br>
+                            <strong>Top Content:</strong> <span class="top-content">Instagram Reels</span>
                         </div>
                     </div>
                 </div>
@@ -475,7 +473,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <img src="images/main-logo.png" alt="Where Be Be Logo" class="footer-logo">
+                    <div class="footer-brand">
+                        <img src="images/main-logo.png" alt="Where Be Be Logo" class="footer-logo">
+                        <h3 class="footer-brand-text">Where Be Be</h3>
+                    </div>
                     <p>Your cultural plug for Fort Worth & beyond.</p>
                 </div>
                 <div class="footer-section">

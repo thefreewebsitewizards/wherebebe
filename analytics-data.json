@@ -1,0 +1,41 @@
+{
+  "platforms": {
+    "instagram": "23,200+",
+    "tiktok": "17,000+",
+    "facebook": "16,000+",
+    "youtube": "384+"
+  },
+  "demographics": {
+    "gender": {
+      "women": 80,
+      "men": 20
+    },
+    "age": {
+      "18-24": 24.5,
+      "25-34": 30,
+      "35-44": 28.9,
+      "45+": 16.6
+    }
+  },
+  "locations": {
+    "fort-worth": 12.7,
+    "dallas": 10.2,
+    "arlington": 4.2,
+    "houston": 2.3,
+    "other": 70.6
+  },
+  "engagement": {
+    "monthlyViews": "129K+",
+    "engagements": "73.5K",
+    "accountsReached": "48.5K",
+    "peakActivity": "Saturdays, 4-5 PM",
+    "topContent": "Instagram Reels"
+  },
+  "contentStats": {
+    "totalReelViews": "50K+",
+    "avgEngagementRate": "8.5%",
+    "brandSatisfaction": "95%",
+    "avgViewsPerReel": "15K+"
+  },
+  "lastUpdated": "2024-12-19"
+}

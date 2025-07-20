@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initNewsletterForm();
     loadInstagramFeed();
     loadLatestBlogPosts();
+    loadAnalyticsData();
 });
 
 // Navigation functionality
@@ -133,19 +134,20 @@ function loadInstagramFeed() {
     // Instagram posts data - using the provided URLs
     const instagramPosts = [
         {
+            id: 'DMQ98UxusKQ',
+            url: 'https://www.instagram.com/p/DMQ98UxusKQ/',
+            embedUrl: 'https://www.instagram.com/p/DMQ98UxusKQ/embed'
+        },
+        {
+            id: 'DMQhUgJua7c',
+            url: 'https://www.instagram.com/p/DMQhUgJua7c/',
+            embedUrl: 'https://www.instagram.com/p/DMQhUgJua7c/embed'
+        },
+
+        {
             id: 'DMI8K-kua-F',
             url: 'https://www.instagram.com/p/DMI8K-kua-F/',
             embedUrl: 'https://www.instagram.com/p/DMI8K-kua-F/embed'
-        },
-        {
-            id: 'DMGuIzYuWHp',
-            url: 'https://www.instagram.com/p/DMGuIzYuWHp/',
-            embedUrl: 'https://www.instagram.com/p/DMGuIzYuWHp/embed'
-        },
-        {
-            id: 'DMGVVcWOk4O',
-            url: 'https://www.instagram.com/p/DMGVVcWOk4O/',
-            embedUrl: 'https://www.instagram.com/p/DMGVVcWOk4O/embed'
         }
     ];
 
@@ -156,7 +158,7 @@ function loadInstagramFeed() {
                 <div class="instagram-post" data-post-id="${post.id}">
                     <iframe src="${post.embedUrl}" 
                             width="320" 
-                            height="400" 
+                            height="600" 
                             frameborder="0" 
                             scrolling="no" 
                             allowtransparency="true"
@@ -577,3 +579,82 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// Analytics Data Loading
+function loadAnalyticsData() {
+    // Only load analytics data if we're on the portfolio page
+    if (!document.querySelector('.analytics-section')) return;
+    
+    fetch('./analytics-data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to load analytics data');
+            }
+            return response.json();
+        })
+        .then(data => {
+            updateAnalyticsDisplay(data);
+        })
+        .catch(error => {
+            console.warn('Analytics data not available:', error);
+            // Fallback to existing static data
+        });
+}
+
+function updateAnalyticsDisplay(data) {
+    // Update platform stats
+    updateElementText('.instagram-stat', data.platforms.instagram);
+    updateElementText('.tiktok-stat', data.platforms.tiktok);
+    updateElementText('.facebook-stat', data.platforms.facebook);
+    updateElementText('.youtube-stat', data.platforms.youtube);
+    
+    // Update content stats
+    updateElementText('.total-reel-views', data.contentStats.totalReelViews);
+    updateElementText('.engagement-rate', data.contentStats.avgEngagementRate);
+    updateElementText('.brand-satisfaction', data.contentStats.brandSatisfaction);
+    updateElementText('.avg-views-per-reel', data.contentStats.avgViewsPerReel);
+    
+    // Update engagement metrics
+    updateElementText('.monthly-views', data.engagement.monthlyViews);
+    updateElementText('.total-engagements', data.engagement.engagements);
+    updateElementText('.accounts-reached', data.engagement.accountsReached);
+    updateElementText('.peak-activity', data.engagement.peakActivity);
+    updateElementText('.top-content', data.engagement.topContent);
+    
+    // Update demographics (if elements exist)
+    updateDemographics(data.demographics);
+    
+    // Update locations (if elements exist)
+    updateLocations(data.locations);
+    
+    // Update last updated date
+    updateElementText('.last-updated', `Last updated: ${data.lastUpdated}`);
+}
+
+function updateElementText(selector, value) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.textContent = value;
+    }
+}
+
+function updateDemographics(demographics) {
+    // Update gender percentages
+    updateElementText('.women-percentage', `${demographics.gender.women}%`);
+    updateElementText('.men-percentage', `${demographics.gender.men}%`);
+    
+    // Update age group percentages
+    updateElementText('.age-18-24', `${demographics.age['18-24']}%`);
+    updateElementText('.age-25-34', `${demographics.age['25-34']}%`);
+    updateElementText('.age-35-44', `${demographics.age['35-44']}%`);
+    updateElementText('.age-45-plus', `${demographics.age['45+']}%`);
+}
+
+function updateLocations(locations) {
+    // Update location percentages
+    updateElementText('.fort-worth-percentage', `${locations['fort-worth']}%`);
+    updateElementText('.dallas-percentage', `${locations.dallas}%`);
+    updateElementText('.arlington-percentage', `${locations.arlington}%`);
+    updateElementText('.houston-percentage', `${locations.houston}%`);
+    updateElementText('.other-cities-percentage', `${locations.other}%`);
+}

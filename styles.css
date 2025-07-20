@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--black);
     background-color: var(--white);
@@ -148,14 +148,20 @@ body {
     align-items: center;
 }
 
-.nav-logo .logo {
-    height: 40px;
-    width: auto;
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 0;
     transition: var(--transition);
+    cursor: pointer;
+    letter-spacing: -0.5px;
 }
 
-.nav-logo .logo:hover {
-    transform: scale(1.05);
+.logo-text:hover {
+    color: var(--sage-rose);
+    transform: scale(1.02);
 }
 
 .nav-menu {
@@ -167,10 +173,12 @@ body {
 .nav-link {
     text-decoration: none;
     color: var(--black);
+    font-family: 'Playfair Display', serif;
     font-weight: 500;
     transition: var(--transition);
     position: relative;
     padding: 0.5rem 0;
+    letter-spacing: 0.3px;
 }
 
 .nav-link:hover,
@@ -262,20 +270,24 @@ body {
 }
 
 .hero-title {
+    font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: 700;
     color: white;
     margin-bottom: 1rem;
     line-height: 1.1;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    letter-spacing: -1px;
 }
 
 .hero-subtitle {
+    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     color: var(--gold);
     font-weight: 600;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    letter-spacing: 0.5px;
 }
 
 .hero-description {
@@ -334,11 +346,15 @@ body {
     padding: 1rem 2rem;
     border-radius: var(--border-radius);
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     transition: var(--transition);
     border: 2px solid transparent;
     cursor: pointer;
     text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 .btn-primary {
@@ -379,13 +395,24 @@ body {
     transform: translateY(-2px);
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.3px;
+}
+
 /* Sections */
 .section-title {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--black);
     text-align: center;
     margin-bottom: 3rem;
+    color: var(--black);
+    letter-spacing: -0.5px;
     position: relative;
 }
 
@@ -398,6 +425,7 @@ body {
     width: 60px;
     height: 3px;
     background: var(--gold);
+    border-radius: 2px;
 }
 
 /* About Preview Section */
@@ -457,40 +485,6 @@ body {
 .about-image:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-/* Instagram Feed */
-.instagram-feed {
-    padding: 80px 0;
-    background: #fafafa;
-}
-
-.instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    margin: 40px 0;
-    justify-items: center;
-}
-
-.instagram-post {
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(35, 31, 32, 0.1);
-    transition: all 0.3s ease;
-    background: white;
-}
-
-.instagram-post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(35, 31, 32, 0.15);
-}
-
-.instagram-post iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-    display: block;
 }
 
 .instagram-cta {
@@ -730,9 +724,13 @@ body {
 }
 
 .footer-section h4 {
+    font-family: 'Playfair Display', serif;
     color: var(--gold);
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
 }
 
 .footer-section ul {
@@ -755,9 +753,25 @@ body {
     opacity: 1;
 }
 
-.footer-logo {
-    height: 40px;
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 35px;
+    width: auto;
+}
+
+.footer-brand-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin: 0;
+    letter-spacing: -0.3px;
 }
 
 .social-links {
@@ -789,6 +803,88 @@ body {
     opacity: 0.6;
 }
 
+/* Instagram Feed */
+.instagram-feed {
+    padding: 5rem 0;
+    background: var(--gray-light);
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.instagram-post {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.instagram-post:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.instagram-post iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 15px;
+}
+
+.instagram-post video {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 15px;
+    object-fit: cover;
+    background: #f0f0f0;
+}
+
+.instagram-post {
+    position: relative;
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.instagram-post:hover .video-overlay {
+    opacity: 1;
+}
+
+.view-on-instagram {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.view-on-instagram:hover {
+    color: var(--gold);
+}
+
+.view-on-instagram i {
+    font-size: 1.1rem;
+}
+
 /* Enhanced Mobile Responsive Design */
 
 /* Improved Base Mobile Styles */
@@ -806,8 +902,8 @@ body {
         padding: 0 16px;
     }
 
-    .nav-logo .logo {
-        height: 35px;
+    .logo-text {
+        font-size: 1.5rem;
     }
 
     .nav-menu {
@@ -857,6 +953,7 @@ body {
         font-size: 2.8rem;
         line-height: 1.1;
         margin-bottom: 1.5rem;
+        letter-spacing: -0.8px;
     }
 
     .hero-subtitle {
@@ -905,6 +1002,7 @@ body {
         text-align: center;
         font-size: 2.2rem;
         margin-bottom: 1.5rem;
+        letter-spacing: -0.4px;
     }
 
     .about-text-content .section-title::after {
@@ -945,8 +1043,24 @@ body {
     }
 
     .instagram-post iframe {
-        height: 380px;
+        height: 480px;
         border-radius: 12px;
+    }
+
+    .instagram-post video {
+        height: 480px;
+        border-radius: 12px;
+    }
+
+    .video-overlay {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 8px;
+    }
+
+    .view-on-instagram {
+        font-size: 0.8rem;
     }
 
     .instagram-placeholder {
@@ -1059,6 +1173,13 @@ body {
         height: 45px;
     }
 
+    .footer-brand {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        text-align: center;
+    }
+
     /* Enhanced Button Styles */
     .btn {
         padding: 0.9rem 1.8rem;
@@ -1069,6 +1190,7 @@ body {
     .section-title {
         font-size: 2rem;
         margin-bottom: 2.5rem;
+        letter-spacing: -0.3px;
     }
 }
 
@@ -1087,6 +1209,7 @@ body {
     .hero-title {
         font-size: 2.2rem;
         margin-bottom: 1rem;
+        letter-spacing: -0.6px;
     }
 
     .hero-subtitle {
@@ -1144,6 +1267,10 @@ body {
         height: 320px;
     }
 
+    .instagram-post video {
+        height: 320px;
+    }
+
     .instagram-placeholder {
         padding: 30px 15px;
     }
@@ -1191,8 +1318,13 @@ body {
 
 /* Enhanced Extra Small Mobile */
 @media (max-width: 360px) {
+    .logo-text {
+        font-size: 1.3rem;
+    }
+
     .hero-title {
         font-size: 1.9rem;
+        letter-spacing: -0.4px;
     }
 
     .hero-subtitle {
@@ -1211,8 +1343,24 @@ body {
         height: 280px;
     }
 
+    .instagram-post video {
+        height: 280px;
+    }
+
     .section-title {
         font-size: 1.6rem;
+        letter-spacing: -0.2px;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .footer-brand-text {
+        font-size: 1.2rem;
     }
 }
 
